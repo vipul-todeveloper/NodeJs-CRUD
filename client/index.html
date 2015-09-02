@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="NodeCRUD">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Mailchimp Api Demo</title>
+    <!--Vendor CSS-->
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom/style.css">
+    <!-- Vendor JS-->
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-route.js"></script>
+    <script src="js/vendor/angular-resource.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row pad text-center bg-primary mar-bottom">
+            <h1 class="capital">Node JS And Angular With Mysql</h1>
+        </div>
+        <div ng-view=""></div>
+    </div>
+</body>
+<!--Custom JS-->
+<!--Application Initialize JS-->
+<script src="js/custom/app.js"></script>
+<!--Service JS-->
+<script src="js/custom/services/user.js"></script>
+<!--Controller JS-->
+<script src="js/custom/controllers/userCtrl.js"></script>
+</html>

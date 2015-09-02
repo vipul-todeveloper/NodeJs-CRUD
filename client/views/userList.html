@@ -1,0 +1,30 @@
+<div class="col-sm-11 pad">
+    <div class="col-sm-6">
+        <h1 class="list-inline">User List</h1>
+    </div>
+    <div class="col-sm-6">
+        <h1></h1>
+        <div class="pull-right">
+            <a class="btn btn-info" href="#/createUser">Create User</a>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <tr>
+            <th>No.</th>
+            <th>User Id</th>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr ng-repeat="user in users">
+            <td>{{$index + 1}}</td>
+            <td>{{user.user_id}} </td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>
+                <a  href="javascript:void(0)" ng-href="#/createUser/{{user.user_id}}"><span class="glyphicon glyphicon-edit" style='font-size: 20px'></span></a>&nbsp;
+                <a href="javascript:void(0)" ng-click="remove(user.user_id)"><span class="glyphicon glyphicon-trash text-danger" style='font-size: 20px'></span></a>
+            </td>
+        </tr>
+    </table>
+</div>

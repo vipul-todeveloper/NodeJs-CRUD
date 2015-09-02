@@ -1,0 +1,32 @@
+body{
+    margin: 0px auto;
+}
+.pad{
+    padding: 10px;
+}
+
+.mar-bottom{
+    margin-bottom: 20px;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+.areaHeight{
+    height: 300px !important;
+}
+
+.enable{
+
+}
+
+.disable{
+    pointer-events: none;
+}
+
+.bottom {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
